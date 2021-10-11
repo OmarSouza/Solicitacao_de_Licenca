@@ -12,9 +12,13 @@ public class Licenca {
     public String rota_Destino;
     public String rota_Rota;
     public String cliente_Cliente;
-    public String cliente_NotaFiscal;
+    public String cliente_Nota_Fiscal;
 
-    public Licenca(String veiculo_Placa_Cavalo, String veiculo_Placa_Reboque, String carga_Descricao, String carga_Dimensao_Comprimento, String carga_Dimensao_Largura, String carga_Dimensao_Altura, String carga_Dimensao_Peso, String rota_Origem, String rota_Destino, String rota_Rota, String cliente_Cliente, String cliente_NotaFiscal) {
+    //Construtor para entrada de Dados
+    public Licenca(String veiculo_Placa_Cavalo, String veiculo_Placa_Reboque, String carga_Descricao, 
+            String carga_Dimensao_Comprimento, String carga_Dimensao_Largura, String carga_Dimensao_Altura, 
+            String carga_Dimensao_Peso, String rota_Origem, String rota_Destino, String rota_Rota, String cliente_Cliente, 
+            String cliente_Nota_Fiscal) {
         this.veiculo_Placa_Cavalo = veiculo_Placa_Cavalo;
         this.veiculo_Placa_Reboque = veiculo_Placa_Reboque;
         this.carga_Descricao = carga_Descricao;
@@ -26,9 +30,14 @@ public class Licenca {
         this.rota_Destino = rota_Destino;
         this.rota_Rota = rota_Rota;
         this.cliente_Cliente = cliente_Cliente;
-        this.cliente_NotaFiscal = cliente_NotaFiscal;
+        this.cliente_Nota_Fiscal = cliente_Nota_Fiscal;
+    }
+    
+    //Contrutor vazio
+    public Licenca() {
     }
 
+    //Inicio dos metodos Getters e Setters
     public String getVeiculo_Placa_Cavalo() {
         return veiculo_Placa_Cavalo;
     }
@@ -117,13 +126,13 @@ public class Licenca {
         this.cliente_Cliente = cliente_Cliente;
     }
 
-    public String getCliente_NotaFiscal() {
-        return cliente_NotaFiscal;
+    public String getCliente_Nota_Fiscal() {
+        return cliente_Nota_Fiscal;
     }
 
-    public void setCliente_NotaFiscal(String cliente_NotaFiscal) {
-        this.cliente_NotaFiscal = cliente_NotaFiscal;
+    public void setCliente_Nota_Fiscal(String cliente_Nota_Fiscal) {
+        this.cliente_Nota_Fiscal = cliente_Nota_Fiscal;
     }
     
-    
+    //Encerramento dos metodos Getters e Setters
 }
